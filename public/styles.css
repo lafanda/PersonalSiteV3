@@ -1,0 +1,386 @@
+/**NavBar**/
+
+nav{
+    height: 80px;
+}
+
+#nav-item{
+    padding-right: 22px;
+    padding-left: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sign{
+    margin-left: 20px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.navbar-brand{
+    padding-left: 20px ;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-collapse{
+    padding-right:30px;
+}
+
+/**WelcomePage**/
+
+#welcome{
+    padding: 90px 140px 90px 140px;
+}
+
+.tech-font{
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.wave{
+    font-size: 80px;
+    padding-right: 10px;
+}
+.title{
+    padding-top: 10px;
+    font-size: 55px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portrait{
+    padding-left: 40px;
+    height: 310px;
+}
+
+.quote{
+    text-align: center;
+    font-family: 'Caladea', serif;
+    font-weight: 800;
+}
+.subtitle{
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    
+}
+.subtitle2{
+    padding-top: 20px;
+}
+
+
+/**About Me**/
+
+#aboutMe{
+    padding: 35px 0 90px 0;
+}
+
+.heading{
+    padding-top: 10px;
+    padding-bottom: 35px;
+    font-size: 45px;
+    text-align: center;
+}
+
+#about-text{
+    padding: 20px 20px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+/**Projects**/
+#projects{
+    padding: 35px 95px 90px 95px;
+}
+
+/**Blog**/
+#blog{
+    margin: 80px 95px 100px 95px;
+}
+
+.text{
+    padding: 5% 5% 5% 5%;
+    background-color: white;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;;
+    border-color: #c9c9c9ef;
+}
+
+.btnDiv{
+    text-align: center;
+}
+
+#join{
+    margin-top: 75px;
+    width: 250px;
+    height: 60px;
+    background-color:#E8F4EA;
+    color: black;
+}
+#join:hover{
+    background-color:#566759;;
+    border-color: rgb(189, 246, 238);
+    color: rgb(189, 246, 238);
+}
+
+#footer{
+    padding-top: 18px;
+}
+
+.fa-brands{
+    font-size: 22px;
+    color: grey;
+}
+.fa-brands:hover{
+
+    color: rgb(93, 93, 93);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  .main-container {
+    padding: 30px;
+  }
+  
+  /* HEADING */
+  
+  .heading {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  .heading__title {
+    font-weight: 600;
+  }
+  
+  .heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+  }
+  
+  .heading__link {
+    text-decoration: none;
+  }
+  
+  .heading__credits .heading__link {
+    color: inherit;
+  }
+  
+  /* CARDS */
+  
+  .cardsA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .cardA {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .cardA:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .cardA__link,
+  .cardA__exit,
+  .cardA__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .cardA__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .cardA__link:hover::after {
+    width: 100%;
+  }
+  
+  .cardA__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .cardA__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+  }
+  
+  .cardA__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .cardA__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  /* CARD BACKGROUNDS */
+  
+  .card-1 {
+    background: radial-gradient(#9ac6ca, #7ccdf8);
+  }
+  
+  .card-2 {
+    background: radial-gradient(#dfb9c0, #fa99b2);
+  }
+  
+  .card-3 {
+    background: radial-gradient(#beb0f9, #a88ef6);
+  }
+  
+  .card-4 {
+    background: radial-gradient(#c4e6ca, #b1d1b7);
+  }
+  
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cardsA {
+      justify-content: center;
+    }
+  }
+  
+
+.card__link {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card__link:hover::after {
+  width: 100%;
+}
+.card__apply {
+    grid-row: 4/5;
+    align-self: center;
+}
+
+
+.popup {
+	position: absolute;
+    left: 0;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	/* background-color: aqua; */
+}
+.popup-overlay {
+	background-color: rgba(0, 0, 0, 0.575);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+    top: 0;
+}
+.main-popup {
+	position: absolute;
+    top: -20px;
+	left: 0;
+	height: 110vh;
+	width: 60%;
+	z-index: 1;
+	padding: 30px 20px;
+	line-height: 1rem;
+	display: flex;
+	transform: translateX(-100%);
+}
+
+.close-btn {
+	padding: 20px;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: .5s ease all;
+}
+.close-btn:hover {
+	color: #908e8e;
+}
+
+.text-here{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    font-size: 24px;
+}
+@keyframes slide-in {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slide-out {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.noScroll{
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#popup{
+    pointer-events: all;
+}
+
+
+.makeDark{
+    color: 
+    #6c6c6c;
+}
+
+
